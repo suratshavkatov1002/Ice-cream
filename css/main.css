@@ -1,0 +1,995 @@
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+    url('../fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'), 
+    url('../fonts/roboto-v30-latin_cyrillic-regular.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+    url('../fonts/roboto-v30-latin_cyrillic-500.woff2') format('woff2'),
+    url('../fonts/roboto-v30-latin_cyrillic-500.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: 
+    url('../fonts/roboto-v30-latin_cyrillic-700.woff2') format('woff2'), 
+    url('../fonts/roboto-v30-latin_cyrillic-700.woff') format('woff'); 
+}
+
+
+@font-face {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/hind-madurai-v11-latin-regular.woff2') format('woff2'), 
+    url('../fonts/hind-madurai-v11-latin-regular.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 500;
+    src: 
+    url('../fonts/hind-madurai-v11-latin-500.woff2') format('woff2'), 
+    url('../fonts/hind-madurai-v11-latin-500.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 600;
+    src: 
+    url('../fonts/hind-madurai-v11-latin-600.woff2') format('woff2'), 
+    url('../fonts/hind-madurai-v11-latin-600.woff') format('woff'); 
+}
+@font-face {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 700;
+    src: 
+    url('../fonts/hind-madurai-v11-latin-700.woff2') format('woff2'), 
+    url('../fonts/hind-madurai-v11-latin-700.woff') format('woff'); 
+}
+
+
+@font-face {
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    src:
+    url('../fonts/fredoka-one-v13-latin-regular.woff2') format('woff2'),
+    url('../fonts/fredoka-one-v13-latin-regular.woff') format('woff'); 
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+img{
+    vertical-align: middle;
+}
+
+
+.container{
+    max-width: 1165px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.visuallu-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0 );
+}
+
+
+/* HEADER */
+
+.header{
+    background: rgba(242, 206, 218, 0.329);
+    
+}
+    
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-bottom: 37px;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+    
+.header-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items:center;
+    margin-right: 129px;
+}
+
+.header-item-link{
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #150101;
+    opacity: 0.6;
+    margin-right: 40px;
+}
+
+
+
+.header-item-link-active{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #D23166;
+}
+    
+.header-right-btn-link{
+    display: inline-block;
+    text-decoration: none;
+    background: #D23166;
+    border-radius: 5px;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FAFAFA;
+    padding: 14px 50px;
+}
+
+
+/* header bottom */
+
+.heder-bottom-wrapper{
+    display: flex;
+    align-items: center; 
+    margin-bottom: 100px;
+}
+
+.heder-bottom-wrapper::after{
+    content:  "";
+    display: inline-block;
+    align-items: center;
+    width: 890px;
+    height: 742px;
+    background-image: url("../imgs/morojni1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} 
+
+.header-bottom-text1{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0F0101;
+    margin-bottom: 6px;
+}
+
+.header-bottom-text2{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57.33px;
+    line-height: 120.5%;
+    color: #0F0101;
+    opacity: 0.9;
+    margin-bottom: 36px;
+}
+
+.qizil-kotta-yozuv{
+    color: #D23166;
+}
+
+.header-bottom-text3{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #0F0101;
+    opacity: 0.6;
+    margin-bottom: 50px;
+}
+ 
+
+/* afzalliklar section */
+
+.afzalliklari{
+    margin-bottom: 100px;
+    
+}
+
+.afzalliklar-list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+    
+.afzalliklar-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    background: #FFFFFF;
+    border-radius: 7px;
+    padding: 27px 26px;
+    transition:all 0.3s ease;
+}
+
+.afzalliklar-item:hover{
+    transform: scale(1.1);
+}
+
+.afzalliklar-item-shadov{
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.afzalliklar-item::before{
+    content: "";
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    background-image: url("../imgs/car.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+    margin-bottom: 24px;
+}
+
+.afzalliklar-item:nth-child(2)::before{
+    background-image: url("../imgs/sham.svg");    
+}
+
+.afzalliklar-item:nth-child(3)::before{
+    background-image: url("../imgs/doldir.svg");    
+}
+
+.afzalliklar-item:nth-child(4)::before{
+    background-image: url("../imgs/dostavka.svg");    
+}
+
+
+.afzalliklar-heading{
+    margin: 0;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 9px;
+}
+    
+.afzalliklar-text{
+    margin: 0;
+    text-align: center;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.6;
+}
+
+
+/* brown */
+
+.brown{
+    background: #F8EDF0;
+    margin-bottom: 127px;
+}
+    
+.brown-heading{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind Madurai';
+    width: 349px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44.2px;
+    line-height: 49px;
+    color: #150101;
+    margin-bottom: 16px;
+}
+
+.brown-text{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.6;
+    color: #150101;
+    margin-bottom: 35px;
+}
+   
+.brown-bottom-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.brown-container{
+    width: 442px;
+}
+
+.brown-bottom-wrapper::after{
+    content: "";
+    display: inline-block;
+    width: 655px;
+    height: 656px;
+    background-image: url("../imgs/morojni2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center
+}
+    
+
+
+/* our product */
+    
+.our-product-heding{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44.2px;
+    line-height: 61px;
+    color: #150101;
+    margin-bottom: 64px;
+}
+
+.our-product-list{
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.our-product-item-link{
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.our-product-item-link-active{
+    opacity: 1;
+    
+}
+
+.link-chizigi{
+    margin: 0;
+    padding: 0;
+    width: 91px;
+    height: 0px;
+    border: 3px solid #D64374;
+    background-color: #D64374;
+}
+
+.brown-bread-heading{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 11px;
+}
+
+.brown-bread-text{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.7;
+    margin-bottom: 28px;
+}
+   
+.brown-bread-narh{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+    
+.pastroq{
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration-line: line-through;
+    color: #000000;
+    opacity: 0.7;
+}
+
+.brown-bread-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.brown-bread{
+    width: 454px;
+}
+
+.chappa{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+    
+}
+
+
+
+
+.brown-bread-wrapper::before{
+    content: "";
+    display: block;
+    width: 580px;
+    height: 415px;
+    background-image: url("./../imgs/our_moroj1.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.brown-bread-wrapper:nth-child(3)::before{
+    background-image: url("../imgs/our_moroj1.png");
+}
+
+.brown-bread-wrapper:nth-child(4)::before{
+    background-image: url("../imgs/our.moroj2.png");
+}
+
+.brown-bread-wrapper:nth-child(5)::before{
+    background-image: url("../imgs/our_moroj3.png");
+}
+
+.brown-bread-wrapper:nth-child(6)::before{
+    background-image: url("../imgs/our_m0r0j4.png");
+}
+
+
+.brown-bread-wrapper:nth-child(2n)::before{
+    order: 1;
+}
+
+.brown-top-wrapper{
+   display: flex;
+   align-items: center;
+   margin-bottom: 46px;
+}
+
+
+.brown-top-wrapper::before{
+    content: "";
+    display: inline-block;
+    width: 59px;
+    height: 59px;
+   background-image: url("../imgs/apa.png");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   margin-right: 5px;
+   
+}
+
+.apa-ismi{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.t-joy{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.7;
+}
+
+
+
+.brown-bread-t{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.7;
+}
+  
+.strelka-chap{
+    margin-right: 10px;
+}
+    
+.strelka-right{
+    margin-left: 10px;
+}
+    
+.oka{
+    margin-right: 5px;
+}
+
+.opa-kotta{
+    margin-right: 5px;
+}
+
+/* simple */
+
+.simple{
+    background: rgba(242, 206, 218, 0.329); 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 111px;
+}
+
+.simple-container-heading{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44.2px;
+    line-height: 52px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+  
+.simple-container-text{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    color: #0F0101;
+    opacity: 0.7;
+    margin-bottom:  29px;
+}
+
+.list-wrapper{
+    margin-bottom: 41px;
+
+}
+
+.simple-container-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.simpl-container-item{
+    margin: 0;
+    padding: 0;
+}
+
+.simpl-container-item-link{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    margin-left: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.simple-container-list{
+    display: flex;
+    align-items: center;
+
+}
+    
+.simple-container-list::before{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../imgs/qol.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+    
+.simple-container-list:nth-child(5)::before{
+    background-image: url("../imgs/yoz.png");
+}
+
+.simple-container-list:nth-child(4)::before{
+    background-image: url("../imgs/kor.png");
+}
+   
+.simple-container-img{
+    margin-right: 10px;
+}
+
+.simple-container-wrapper{
+    display: flex;
+    align-items: center;
+}
+    
+.simple-container-wrapper::before{
+    content: "";
+    display: inline-block;
+    width: 933px;
+    height: 690px;
+    background-image:url("../imgs/telefon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* formlar-container */
+
+.formlar-container{
+    margin-bottom: 95px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formlar-heading{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+    text-align: center;
+    color: #000000;
+    width: 522px;   
+    margin-bottom: 36px;
+}
+
+.input-top{
+   margin-bottom: 37px;
+}
+
+.input-top-1{
+    background: #FFFFFF;
+    border: 1px solid #FFA3A3;
+    width: 303px;
+    border-radius: 5px;
+    padding: 29px 25px;
+    margin-right: 30px;
+}
+    
+.input-top-2{
+    background: #FFFFFF;
+    border: 1px solid #FFA3A3;
+    width: 303px;
+    border-radius: 5px;
+    padding: 29px 25px;    
+}
+
+.input-bootom-1{
+    background: #FFFFFF;
+    border: 1px solid #FFA3A3;
+    width: 503px;
+    border-radius: 5px;   
+    border-radius: 5px;
+    padding-top: 29px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+
+ 
+.input-bottom-link{
+    display: inline;
+    font-family: 'Roboto';
+    font-style: normal;
+    width: 134px;
+    text-decoration: none;
+    margin-left: -8px;
+    background: #D64374;
+    border-radius: 5px;
+    padding: 26px 44px; 
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+/* footer */
+    
+.footer-container{
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 104px;
+}
+    
+.footer-left{
+    display: flex;
+    align-items: center;
+}
+
+.ullar{
+    display: flex;
+    margin-right: 20px;
+}
+
+.footer{
+    background: #0A0808;
+}
+
+.icons-div{
+    width: 207px;
+    margin-right: 37px;
+    
+}
+
+
+
+.icons-div-text{
+    margin: 0;
+    padding: 0;
+    width: 207px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    opacity: 0.7;
+    margin-bottom: 25px;
+}
+
+.icons-div-link{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.icons-div-link-text{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;  
+    margin-bottom: 8px;
+}
+
+.iconlar-img {
+    margin-right: 5px;
+    
+}
+
+.footer-left-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 132px;
+    margin-top: 108px;
+}
+
+.pastro{
+    margin-top: 110px;
+}
+    
+
+.footer-left-item{
+    margin-bottom: 10px;
+}
+
+.footer-left-item-link{
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.footer-right-text{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-top: 50px;
+    margin-bottom: 13px;    
+}
+
+.footer-right-form{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 275px;
+    opacity: 0.5;
+    border: 2px solid #D64374;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    background-color: white;
+}
+
+.footer-right-form-input{
+    padding: 20px 32px;
+}
+    
+.footer-right-form-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    padding: 20px 32px;
+    background-color: #D64374;
+}
+    
+
+    
+    
+
+
+    
+    
+    
+    
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+  
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
